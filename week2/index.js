@@ -273,7 +273,7 @@ console.log("十");
 
 // 運動紀錄
 let totalDuration = 0; // 累計符合條件的運動時間
-let validDays = 0; // 符合條件的運動次數
+let validDays = 0; // 符合條件的運動次數-
 
 // 小明的一週運動紀錄
 const exerciseRecords = [
@@ -287,7 +287,7 @@ const exerciseRecords = [
 // 範例：週一
 // if (exerciseRecords[0].duration >= 30 && exerciseRecords[0].heartRate >= 130) {
 //   totalDuration += mondayDuration;
-//   validDays += 1;
+//   validDays ++= 1;
 // }
 
 // 練習：週二、週三、週四、週五、週六
