@@ -54,8 +54,9 @@ let BobPrice = 1800; /* Bob 消費金額 */
 let BobIsVip = false; /* Bob 是否為 VIP */
 
 // 練習：（可自行將下方程式碼的註解刪除，完成答題）
-if (BobPrice >= giftPriceRule || BobIsVip == true) {
+if (BobPrice >= giftPriceRule || BobIsVip /*== true*/) {
   console.log("客戶您好，您有符合贈品資格");
+  giftNum -= 1;
 } else {
   console.log("客戶您好，您沒有符合贈品資格")
 }
@@ -256,6 +257,7 @@ let calorieBurn = 0;
 calorieBurn += activities.bicycle.calories * 10;
 calorieBurn += activities.treadmill.calories * 30;
 calorieBurn += activities.yoga.calories * 40;
+calorieBurn += activities.bicycle.calories * 10;
 
 console.log(`小明今日一共消耗約 ${calorieBurn} 卡路里。`);
 
